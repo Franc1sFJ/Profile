@@ -1,0 +1,114 @@
+body {
+	background-color: rgba(215, 190, 135, 0.8);
+	width: 90%;
+	margin: 10% auto 10% auto;
+}
+
+/*@media(min-width: 100em) {
+	body {
+		background-color: rgba(215, 190, 135, 0.8);
+		width: 80%;
+		margin: 10% auto 10% auto;
+	}	
+}*/
+
+.title {
+	text-align: center;
+}
+
+.title h3 {
+	margin-top: -1em;
+}
+
+.credits p {
+	font-size: 6pt;
+	text-indent: 0;
+}
+
+.content, .pre-content, .post-content, .cont-l1, .cont-l2, .cont-l3, .cont-l4, .cont-l5, .cont-l6 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-rows: 1.5em;
+	gap: 0.5%;
+	align-items: center;
+}
+
+@media(max-width: 60em) {
+	.content, .pre-content, .post-content, .cont-l1, .cont-l2, .cont-l3, .cont-l4, .cont-l5, .cont-l6  {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-rows: 1.5em;
+	gap: 0.5%;
+	align-items: center;
+	}
+}
+
+.co-ch {
+	border: 1px solid rgba(173, 52, 62, 1.0);
+	padding-left: 0.2em;
+}
+
+.dedication p {
+	text-align: center;
+	text-indent: 0;
+}
+
+.epigraph {
+	width: 40%;
+	margin:auto;
+}
+
+.character {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 10pt;
+}
+
+.character::first-letter {
+	font-size: 13pt;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 1.0);
+}
+
+p {
+	line-height: 1.5em;
+	text-indent: 2em;
+}
+
+.right {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+}
+
+.uppercase {
+	text-transform: uppercase;
+	font-size: 10pt;
+}
+
+.no-indent p {
+	text-indent: 0;
+}
+
+.deux-indent {
+	text-indent: 4em;
+}
+
+.no-txt-dec {
+	text-decoration: none;
+}
+
+.sub-break {
+	width: 30%;
+}
+
+.end-credits p {
+	text-align: center;
+	text-indent: 0;
+	font-size: 8pt;
+}
