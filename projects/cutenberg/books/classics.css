@@ -1,5 +1,6 @@
 * {
 	font-size: 13pt;
+	font-family: "Times New Roman", Times, serif;
 }
 
 body {
@@ -54,6 +55,10 @@ body {
 .epigraph {
 	width: 40%;
 	margin:auto;
+}
+
+.epigraph p {
+	
 }
 
 .end-credits p {
@@ -113,7 +118,7 @@ h3 {
 	}
 
 	.epigraph {
-	width: 80%;
+	width: 100%;
 	margin:auto;
 	}
 }
@@ -143,7 +148,7 @@ h3 {
 	}
 
 	.epigraph {
-	width: 40%;
+	width: 60%;
 	margin:auto;
 	}
 }
