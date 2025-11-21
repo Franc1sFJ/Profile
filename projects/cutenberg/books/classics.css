@@ -1,0 +1,236 @@
+* {
+	font-size: 13pt;
+	font-family: "Times New Roman", Times, serif;
+}
+
+body {
+	background-color: rgba(215, 190, 135, 0.8);
+	width: 90%;
+	margin: 10% auto 10% auto;
+}
+
+/*@media(min-width: 100em) {
+	body {
+		background-color: rgba(215, 190, 135, 0.8);
+		width: 80%;
+		margin: 10% auto 10% auto;
+	}	
+}*/
+
+/*========================================================================================================================
+										class-based-settings-based-on-title
+========================================================================================================================*/
+
+.title {
+	text-align: center;
+}
+
+.title h3 {
+	margin-top: -1em;
+}
+
+.credits p {
+	font-size: 6pt;
+	text-indent: 0;
+}
+
+.content, .pre-content, .post-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-rows: 1.5em;
+	gap: 0.5%;
+	align-items: center;
+}
+
+.co-ch {
+	border: 1px solid rgba(173, 52, 62, 1.0);
+	padding-left: 0.2em;
+}
+
+.dedication p {
+	text-align: center;
+	text-indent: 0;
+}
+
+.epigraph {
+	width: 40%;
+	margin:auto;
+}
+
+.epigraph p {
+	
+}
+
+.end-credits p {
+	text-align: center;
+	text-indent: 0;
+	font-size: 8pt;
+}
+
+.end-credits a {
+	color: rgba(173, 52, 62, 1.0);
+	font-size: 8pt;
+}
+
+.character {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 10pt;
+}
+
+.character::first-letter {
+	font-size: 13pt;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 1.0);
+}
+
+p {
+	line-height: 1.5em;
+	text-indent: 2em;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+sup {
+	font-size: 8pt;
+}
+
+hr {
+	background-color: rgba(0, 0, 0, 1.0);
+	page-break-after: always;
+}
+
+/*========================================================================================================================
+										device-related-settings-for-content
+========================================================================================================================*/										
+
+@media (min-width: 320px), (min-width: 481px) {
+	.content, .pre-content, .post-content, .cont-l1, .cont-l2, .cont-l3, .cont-l4, .cont-l5, .cont-l6  {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-auto-rows: 1.5em;
+	gap: 0.5%;
+	align-items: center;
+	}
+
+	.epigraph {
+	width: 100%;
+	margin:auto;
+	}
+}
+
+@media (min-width: 641px) {
+	.content, .pre-content, .post-content, .cont-l1, .cont-l2, .cont-l3, .cont-l4, .cont-l5, .cont-l6  {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-rows: 1.5em;
+	gap: 0.5%;
+	align-items: center;
+	}
+
+	.epigraph {
+	width: 80%;
+	margin:auto;
+	}
+}
+
+@media (min-width: 961px), (min-width: 1025px) {
+	.content, .pre-content, .post-content, .cont-l1, .cont-l2, .cont-l3, .cont-l4, .cont-l5, .cont-l6  {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-rows: 1.5em;
+	gap: 0.5%;
+	align-items: center;
+	}
+
+	.epigraph {
+	width: 60%;
+	margin:auto;
+	}
+}
+
+@media (min-width: 1281px) {
+	.content, .pre-content, .post-content, .cont-l1, .cont-l2, .cont-l3, .cont-l4, .cont-l5, .cont-l6  {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-rows: 1.5em;
+	gap: 0.5%;
+	align-items: center;
+	}
+
+	.epigraph {
+	width: 40%;
+	margin:auto;
+	}
+}
+
+/*========================================================================================================================
+													print-settings
+========================================================================================================================*/
+
+@ page {
+	size: 8.5in 11in;
+	margin: 1in;
+}
+
+/*========================================================================================================================
+											absolute-alignment-settings
+========================================================================================================================*/
+
+.right {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+}
+
+.uppercase {
+	text-transform: uppercase;
+	font-size: 10pt;
+}
+
+.lowercase, .footnote, .footnote a, .footnote i, .footnote p, .footnote b {
+	font-size: 10pt;
+}
+
+.footnote a, {
+	color: rgba(173, 52, 62, 1.0)
+}
+
+.no-indent p {
+	text-indent: 0;
+}
+
+.deux-indent {
+	text-indent: 4em;
+}
+
+.no-txt-dec {
+	text-decoration: none;
+}
+
+.sub-break {
+	width: 30%;
+}
+
+.black {
+	color: rgba(0, 0, 0, 1.0);
+}
+
+.red {
+	color:rgba(173, 52, 62, 1.0)
+}
